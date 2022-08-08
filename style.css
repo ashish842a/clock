@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg,orange,black); */
+    background: linear-gradient(45deg,#ffa537 50%,#111 50%);
+  
+}
+.clock{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 90vmin;
+    height: 90vmin;
+    border: 4vmin solid #ff7337;
+    background-color: #111;
+    border-radius: 50%;
+    box-shadow:0 0 30px 5px black,
+            inset 0 0 10px 1px black;
+}
+svg{
+    width: 100%;
+    height: 100%;
+}
+
+.hourhand{
+    width: 3%;
+    height: 20%;
+    background-color: #fff;
+}
+.minhand{
+    width: 2%;
+    height: 25%;
+    background-color: #777;
+}
+.sechand{
+    width: 1%;
+    height: 30%;
+    background-color: #ff7337;
+}
+.hourhand,.minhand,.sechand{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 50%;
+    z-index: -1;
+    border-radius: 1vmin;
+    transform-origin: bottom; 
+    /* transform: rotate(90deg); */
+}
